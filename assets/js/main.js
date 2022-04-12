@@ -35,7 +35,8 @@ const post = [
 ]
 
 const likes = []
-
+// Milestone 2
+// Prendendo come riferimento il layout di esempio presente nell'html, stampiamo i post del nostro feed.
 //dom
 
 const domElement = document.getElementsByClassName('likes')
@@ -76,7 +77,24 @@ for(let i = 0; i<post.length;i++){
 `
 
 
-//inserisco Element nel html
+// Milestone 3
+// Se clicchiamo sul tasto "Mi Piace" cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo. Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
 
 document.querySelector('.container').insertAdjacentHTML('beforeend',cardElement)
+document.getElementById('btn_like '+ single.id).addEventListener("click",function() {
+
+    if (!likes.includes(single.id)) {
+
+        let addNewLike = single.numberlikes + 1;
+        let spanlikeElement = document.getElementById('number_like ' + single.id);
+        
+        Likeplus(spanlikeElement, addNewLike);
+        likes.push(single.id)
+    }
+ });
+}
+
+//funzione per aumentare il numero dei like
+function Likeplus (spanlikeElement, PlusLike){
+    return spanlikeElement.innerHTML = PlusLike
 }

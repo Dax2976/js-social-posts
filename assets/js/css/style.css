@@ -4,17 +4,18 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    background-color:rgba(2, 48, 71, 1);
 }
 h1{
     color: white;
     text-align: center;
     padding-bottom: 22px;
+    font-size: 45px;
 }
 
 .cards{
     background-color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 50%;
 }
 
@@ -59,3 +60,20 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+
+.addLike{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: rgba(64, 64, 64, 1);
+}
+
+.addLike:hover{
+    color: rgb(13, 177, 232);
+}
+
+i{
+    font-size: 20px;
+}
+
+
