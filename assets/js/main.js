@@ -19,7 +19,8 @@ const post = [
     contenuto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, modi aliquid', 
     immage: 'https://i.picsum.photos/id/0/300/300.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ',
     avatar: 'https://i.picsum.photos/id/1003/300/300.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
-    likes: 80,
+    autore: 'Davide Ferraro',
+    numberlikes: 80,
     creation: '02/21/2022'
     },
     {
@@ -27,7 +28,17 @@ const post = [
         contenuto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, modi aliquid', 
         immage: 'https://i.picsum.photos/id/3/300/300.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ',
         avatar: 'https://i.picsum.photos/id/10/300/300.jpg?hmac=oN9fHMXiqe9Zq2RM6XT-RVZkojgPnECWwyEF1RvvTZk',
-        likes: 180,
+        numberlikes: 180,
+        autore: 'Naruto Uzumaki',
         creation: '02/23/2022'
     }
 ]
+
+const likes = []
+
+//dom
+
+const domElement = document.getElementsByClassName('likes')
+
+// array degli oggetti nel dom
+
